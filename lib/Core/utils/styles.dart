@@ -1,25 +1,22 @@
 import 'package:bookly_app_1/constants.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 
-abstract class Styles
-{
+abstract class Styles {
   static const textStyle18 = TextStyle(
     fontSize: 18,
     fontWeight: FontWeight.w600,
   );
-
   static const textStyle20 = TextStyle(
     fontSize: 20,
     fontWeight: FontWeight.normal,
-    fontFamily: kGtSectraFine
+    fontFamily: kGtSectraFine,
   );
-
   static const textStyle30 = TextStyle(
     fontSize: 30,
-    fontWeight: FontWeight.normal,
-    fontFamily: kGtSectraFine
+    fontWeight: FontWeight.w900,
+    fontFamily: kGtSectraFine,
+    letterSpacing: 1.2,
   );
-
   static const textStyle14 = TextStyle(
     fontSize: 14,
     fontWeight: FontWeight.normal,
@@ -30,3 +27,5 @@ abstract class Styles
     fontWeight: FontWeight.w500,
   );
 }
+
+const TextStyle textStyle = TextStyle();

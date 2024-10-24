@@ -12,7 +12,7 @@ class HomeViewBody extends StatelessWidget {
     return const CustomScrollView(
       slivers: [
         SliverToBoxAdapter(
-          child:Column(
+          child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
@@ -46,4 +46,3 @@ class HomeViewBody extends StatelessWidget {
     );
   }
 }
-

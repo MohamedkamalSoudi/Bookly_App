@@ -9,13 +9,13 @@ class CustomBookImage extends StatelessWidget {
     return AspectRatio(
       aspectRatio: 2.6 / 4,
       child: Container(
-        decoration:  BoxDecoration(
-          borderRadius: BorderRadius.circular(16),
-          color: Colors.red,
-            image:const DecorationImage(
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(16),
+            color: Colors.red,
+            image: const DecorationImage(
               fit: BoxFit.fill,
-          image: AssetImage(AssetsData.testImage),
-        )),
+              image: AssetImage(AssetsData.testImage),
+            )),
       ),
     );
   }

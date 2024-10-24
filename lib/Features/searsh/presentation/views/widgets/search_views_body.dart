@@ -4,34 +4,31 @@ import 'package:bookly_app_1/Features/searsh/presentation/views/widgets/custom_s
 import 'package:flutter/material.dart';
 
 class SearchViewsBody extends StatelessWidget {
-const SearchViewsBody({super.key});
+  const SearchViewsBody({super.key});
 
-@override
-Widget build(BuildContext context) {
+  @override
+  Widget build(BuildContext context) {
     return const Padding(
-    padding: EdgeInsets.symmetric(horizontal: 30),
-    child: Column(
+      padding: EdgeInsets.symmetric(horizontal: 30),
+      child: Column(
         children: [
-        CustomSearchTextField(),
-        SizedBox(
-            height:16 ,
-        ),
-        Text(
+          CustomSearchTextField(),
+          SizedBox(
+            height: 16,
+          ),
+          Text(
             'Search Result',
             style: Styles.textStyle18,
-        ),
-        SizedBox(
-            height:16 ,
-        ),
-        Expanded(
-            child: SearchResultListView()),
+          ),
+          SizedBox(
+            height: 16,
+          ),
+          Expanded(child: SearchResultListView()),
         ],
-    ),
+      ),
     );
+  }
 }
-}
-
-
 
 class SearchResultListView extends StatelessWidget {
   const SearchResultListView({super.key});
@@ -43,8 +40,8 @@ class SearchResultListView extends StatelessWidget {
       itemCount: 10,
       itemBuilder: (context, index) {
         return const Padding(
-          padding:  EdgeInsets.symmetric(vertical: 10),
-          child:  BookListViewItem(),
+          padding: EdgeInsets.symmetric(vertical: 10),
+          child: BookListViewItem(),
         );
       },
     );

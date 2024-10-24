@@ -44,7 +44,8 @@ class BookListViewItem extends StatelessWidget {
                       'Harry Potter and the Goblet of Fire',
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
-                      style: Styles.textStyle20.copyWith(fontFamily: kGtSectraFine),
+                      style: Styles.textStyle20
+                          .copyWith(fontFamily: kGtSectraFine),
                     ),
                   ),
                   const SizedBox(
@@ -78,8 +79,3 @@ class BookListViewItem extends StatelessWidget {
     );
   }
 }
-
-
-
-
-

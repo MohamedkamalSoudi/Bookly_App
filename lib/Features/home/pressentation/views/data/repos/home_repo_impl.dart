@@ -20,10 +20,12 @@ class HomeRepoImpl implements HomeRepo {
         books.add(BookModel.fromJson(item));
       }
       return right(books);
-    }  catch (e) {
-      if(e is DioError){
-      return left(ServerFailure(errMessage));
+    } catch (e) {
+      if (e is DioError) {
+        return left(ServerFailure.fromDiorError(e));
       }
+
+      return left(ServerFailure(e.toString()));
     }
   }
 

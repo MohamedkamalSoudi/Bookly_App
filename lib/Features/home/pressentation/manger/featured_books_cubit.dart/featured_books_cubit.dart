@@ -1,4 +1,3 @@
-import 'package:bookly_app_1/Core/errors/failures.dart';
 import 'package:bookly_app_1/Features/home/pressentation/views/data/models/book_model/book_model.dart';
 import 'package:bookly_app_1/Features/home/pressentation/views/data/repos/home_repo.dart';
 import 'package:equatable/equatable.dart';
@@ -17,10 +16,9 @@ class FeaturedBooksCubit extends Cubit<FeaturedBooksState> {
 
     result.fold((failure)
     {
-      emit(FeaturedBooksFailure(failure.errMessage));
-    }, (books)
-    {
-      emit(FeaturedBooksSuccess(books));
+      emit(FeaturedBooksFailure(errMessage: failure.message));
+    }, (books){
+      emit(FeaturedBooksSuccess(books:books));
     });
   }
 }

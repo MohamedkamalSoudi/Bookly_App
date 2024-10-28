@@ -18,5 +18,6 @@ final class NewsetBooksFailure extends NewsetBooksState {
   final String errMessage;
 
   const NewsetBooksFailure({required this.errMessage});
+
 }
 

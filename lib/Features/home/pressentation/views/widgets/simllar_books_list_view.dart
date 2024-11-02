@@ -13,7 +13,9 @@ class SimilarBooksListview extends StatelessWidget {
           itemBuilder: (context, index) {
             return const Padding(
               padding: EdgeInsets.symmetric(horizontal: 5.0),
-              child: CustomBookImage(),
+              child: CustomBookImage(
+                imageUrl: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.simplilearn.com%2Fbest-programming-languages-start-learning-today-article&psig=AOvVaw0DVsPZR8B_DpIBRik6NON0&ust=1730639663829000&source=images&cd=vfe&opi=89978449&ved=0CBcQjhxqFwoTCLiH66ndvYkDFQAAAAAdAAAAABAE',
+              ),
             );
           }),
     );

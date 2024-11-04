@@ -15,6 +15,8 @@ class VolumeInfo extends Equatable {
   final int? pageCount;
   final String? printType;
   final List<String>? categories;
+  final int? averageRating;
+  final int? ratingsCount;
   final String? maturityRating;
   final bool? allowAnonLogging;
   final String? contentVersion;
@@ -26,6 +28,8 @@ class VolumeInfo extends Equatable {
   final String? canonicalVolumeLink;
 
   const VolumeInfo({
+    this.averageRating, 
+    this.ratingsCount, 
     this.title,
     this.authors,
     this.publishedDate,
@@ -64,6 +68,8 @@ class VolumeInfo extends Equatable {
         maturityRating: json['maturityRating'] as String?,
         allowAnonLogging: json['allowAnonLogging'] as bool?,
         contentVersion: json['contentVersion'] as String?,
+        averageRating: json['averageRating'] as int?,
+        ratingsCount: json['ratingsCount'] as int?,
         panelizationSummary: json['panelizationSummary'] == null
             ? null
             : PanelizationSummary.fromJson(
